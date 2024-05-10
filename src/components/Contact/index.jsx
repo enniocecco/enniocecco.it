@@ -51,8 +51,8 @@ export default function Contact() {
               <Image fill={true} alt={"image"} src={`/images/fisheye.jpg`} />
             </div>
             <div>
-              <h2>Let's work</h2>
-              <h2>together</h2>
+              <h2>Lavoriamo</h2>
+              <h2>assieme</h2>
             </div>
           </span>
           

@@ -6,7 +6,8 @@ import Image from 'next/image';
 const slider1 = [
     {
         color: "#e3e5e7",
-        src: "foodcost-edit.png"
+        src: "giorgio-lago.png"
+        
     },
     {
         color: "#d6d7dc",
@@ -18,18 +19,20 @@ const slider1 = [
     },
     {
         color: "#21242b",
-        src: "giorgio-lago.png"
+        src: "cadirajo.png"
     }
 ]
 
 const slider2 = [
     {
         color: "#d4e3ec",
-        src: "riccesi.png"
+        
+        src: "foodcost-edit.png"
     },
     {
         color: "#e5e0e1",
-        src: "makaki-4.png"
+        src: "aganis.png"
+       
     },
     {
         color: "#d7d4cf",
@@ -37,7 +40,8 @@ const slider2 = [
     },
     {
         color: "#e1dad6",
-        src: "tognana.png"
+        src: "makaki-4.png"
+        
     }
 ]
 

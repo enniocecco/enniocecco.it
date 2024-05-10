@@ -46,10 +46,11 @@ export default function Description() {
                 textDecoration: "none",
                 cursor: "pointer",
               }}
-              href="/about"
+              target="_blank"
+              href="/cv-ennio-cecco.pdf"
               passHref
             >
-              About me
+              Scarica il CV
             </Link>
           </Rounded>
         
