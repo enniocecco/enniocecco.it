@@ -37,6 +37,7 @@ export default function Contact() {
   const y = useTransform(scrollYProgress, [0, 1], [-500, 0]);
   const rotate = useTransform(scrollYProgress, [0, 1], [120, 90]);
   return (
+    <main id="contacts">
     <motion.div style={{ y }} ref={container} className={styles.contact}>
         <Script
         async
@@ -153,5 +154,6 @@ export default function Contact() {
         </div>
       </div>
     </motion.div>
+    </main>
   );
 }

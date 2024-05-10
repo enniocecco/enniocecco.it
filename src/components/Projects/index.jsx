@@ -15,20 +15,20 @@ const projects = [
     src: "enniocecco.png",
     color: "#000000",
     text:"white",
-    href: "https://www.enniocecco.it/",
+    href: "https://github.com/enniocecco/enniocecco.it",
     slug: "this-website",
     technologies: "Next.js, SCSS, GSAP, Locomotive Scroll, Three JS",
     description: "Personal Portoflio per me stesso, sviluppatore web. Realizzato interamente in Next JS e utilizzato GSAP e Locomotive Scroll per l'animazione. Presenti elementi in Three JS."
   },
   {
-    title: "Fristeel",
-    src: "fristeel.png",
-    color: "#005092",
+    title: "Motorlcass",
+    src: "motorclass-screenshot.png",
+    color: "#000",
     text:"white",
-    href: "https://www.fristeel.com/",
+    href: "https://motorclass.boiledbrains.it/",
     slug: "this-website",
-    technologies: "Wordpress, Gutenberg Custom Blocks",
-    description: "Sito corporate veloce ed ottimizzato e scritto interamente in blocchi Gutenberg customizzati, per una facile personalizzazione autonoma."
+    technologies: "React.js, Webpack, API integrations",
+    description: "Una piattaforma web interattiva per la consultazione di un catalogo di auto a marchio Audi sincronizzato con un gestionale."
   },
   {
     title: "Makaki",
@@ -42,24 +42,25 @@ const projects = [
   },
   {
     title: "Cubitto",
-    src: "c2montreal.png",
-    color: "#000000",
-    text:"white",
-    href: "/projects/this-website",
+    src: "cubitto.png",
+    color: "#ffd6d6",
+    text:"black",
+    href: "https://github.com/enniocecco/Cubitto",
     slug: "this-website",
     technologies: "React Native, WebUI API",
     description: "Una piattaforma web interattiva per la consultazione di un catalogo di auto a marchio Audi sincronizzato con un gestionale."
   },
+  
   {
-    title: "Motorlcass",
-    src: "motorclass-screenshot.png",
-    color: "#000",
+    title: "Fristeel",
+    src: "fristeel.png",
+    color: "#005092",
     text:"white",
-    href: "https://motorclass.boiledbrains.it/",
+    href: "https://www.fristeel.com/",
     slug: "this-website",
-    technologies: "React.js, Webpack, API integrations",
-    description: "Una piattaforma web interattiva per la consultazione di un catalogo di auto a marchio Audi sincronizzato con un gestionale."
-  }
+    technologies: "Wordpress, Gutenberg Custom Blocks",
+    description: "Sito corporate veloce ed ottimizzato e scritto interamente in blocchi Gutenberg customizzati, per una facile personalizzazione autonoma."
+  },
 ]
 
 const scaleAnimation = {
@@ -152,7 +153,7 @@ export default function Home() {
         </motion.div>
         
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.a ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} target="_blank" href={projects[index].href} >View</motion.a>
+        <motion.a ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} target="_blank" href={projects[index].href} >Guarda</motion.a>
         
     </>
   </main>

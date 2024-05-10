@@ -11,7 +11,7 @@ export default function Description() {
   const description = useRef(null);
   const isInView = useInView(description);
   return (
-    <div ref={description} className={styles.description}>
+    <div ref={description} className={styles.description} id="about">
      
       <div className={styles.body}>
         <p>

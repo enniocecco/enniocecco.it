@@ -10,13 +10,14 @@ export default function index({ index, title, manageModal, key, href, slug, tech
     event.preventDefault();
    
  
-      await router.push(href);
+      await window.open(href, '_blank');
     
   };
 
   return (
-   
+
     <div
+      onClick={onClick}
       onMouseEnter={(e) => {
         manageModal(true, index, e.clientX, e.clientY);
       }}
