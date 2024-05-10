@@ -1,0 +1,35 @@
+{
+  "name": "awwwards-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@calcom/embed-react": "^1.5.0",
+    "@react-spring/core": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.5",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "framer-motion": "^10.13.0",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.12.2",
+    "locomotive-scroll": "^5.0.0-beta.12",
+    "next": "13.4.10",
+    "path": "^0.12.7",
+    "react": "18.2.0",
+    "react-animated-cursor": "^2.11.2",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.6.4",
+    "react-responsive": "^10.0.0",
+    "sass": "^1.64.0",
+    "three": "^0.164.1"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
