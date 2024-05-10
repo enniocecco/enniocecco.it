@@ -41,6 +41,17 @@ const projects = [
     description: "E-commerce per una pokeria nata come ghost kitchen, con un avanzato sistema logistico di food delivery e integrazione custom con Cassa in Cloud. All'interno presente un configuratore di pokè."
   },
   {
+    title: "FoodCost AI",
+    src: "foodcost.png",
+    color: "#ffd6d6",
+    text:"black",
+    href: "#",
+    slug: "this-website",
+    technologies: "Cassanova API, PHP",
+    description: "Un avanzato sistema di gestione del food cost per ristoranti per il monitoraggio automatico dei costi dei prodotti, del venduto e del loro andamento nel tempo. Incrementa le capacità decisionali di gestione."
+  },
+  
+  {
     title: "Cubitto",
     src: "cubitto.png",
     color: "#ffd6d6",
@@ -124,11 +135,11 @@ export default function Home() {
         })
       }
     </div>
-    
+    <a style={{ color: "black", textDecoration: "none"}} href="#contacts">
     <Rounded>
-      <p>Start Your project</p>
+      <p>Il prossimo sarà il tuo?</p>
     </Rounded>
-    
+    </a>
     <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider} >

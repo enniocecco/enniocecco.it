@@ -93,12 +93,16 @@ export default function Header() {
               <div className={styles.indicator}></div>
             </div>
           </Magnetic>
+         
           <Magnetic>
-            <div className={styles.el}>
-              <a href="/cv-ennio-cecco.pdf" target="_blank">Scarica il mio CV</a>
+            
+            <div className={styles.el} style={{cursor: "pointer", border: "1px solid #6bea99", borderRadius: "10px"}}>
+              <a href="/cv-ennio-cecco.pdf" target="_blank">Il mio CV</a>
               <div className={styles.indicator}></div>
             </div>
+            
           </Magnetic>
+         
         </div>
         <div className={styles.marq}></div>
       </div>
