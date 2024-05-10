@@ -15,11 +15,17 @@
         margin: 0px;
         font-weight: 400;
         transition: all 0.4s;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     p{
         transition: all 0.4s;
         font-weight: 300;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &:last-of-type{

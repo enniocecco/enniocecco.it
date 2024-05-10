@@ -13,16 +13,16 @@ const navItems = [
     href: "/",
   },
   {
-    title: "Work",
-    href: "/work",
-  },
-  {
     title: "About",
-    href: "/about",
+    href: "#about",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Lavori",
+    href: "#work",
+  },
+  {
+    title: "Contatti",
+    href: "#contacts",
   },
 ]
 
@@ -46,7 +46,7 @@ export default function Index({ onNavClick }) {
             }} 
             className={styles.nav}>
                     <div className={styles.header}>
-                        <p>Navigation</p>
+                        <p>Navigazione</p>
                     </div>
                     {
                       navItems.map( (data, index) => {
