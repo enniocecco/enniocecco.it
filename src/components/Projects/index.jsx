@@ -12,43 +12,53 @@ import Script from "next/script";
 const projects = [
   {
     title: "Questo sito web",
-    src: "c2montreal.png",
+    src: "enniocecco.png",
     color: "#000000",
-    href: "/projects/this-website",
+    text:"white",
+    href: "https://www.enniocecco.it/",
     slug: "this-website",
-    technologies: "Next.js, SCSS, GSAP, Locomotive Scroll"
+    technologies: "Next.js, SCSS, GSAP, Locomotive Scroll, Three JS",
+    description: "Personal Portoflio per me stesso, sviluppatore web. Realizzato interamente in Next JS e utilizzato GSAP e Locomotive Scroll per l'animazione. Presenti elementi in Three JS."
   },
   {
     title: "Fristeel",
-    src: "officestudio.png",
-    color: "#8C8C8C",
-    href: "/projects/this-website",
+    src: "fristeel.png",
+    color: "#005092",
+    text:"white",
+    href: "https://www.fristeel.com/",
     slug: "this-website",
-    technologies: "Wordpress, Gutenberg Custom Blocks"
+    technologies: "Wordpress, Gutenberg Custom Blocks",
+    description: "Sito corporate veloce ed ottimizzato e scritto interamente in blocchi Gutenberg customizzati, per una facile personalizzazione autonoma."
   },
   {
-    title: "Tognana Ceramiche",
-    src: "locomotive.png",
-    color: "#EFE8D3",
-    href: "/projects/this-website",
+    title: "Makaki",
+    src: "makaki.png",
+    color: "#e44a64",
+    text:"white",
+    href: "https://www.makaki.it/",
     slug: "this-website",
-    technologies: "Magento 2"
+    technologies: "Wordpress, Poke Configurator, Cassa in Cloud integration, Brand Identity",
+    description: "E-commerce per una pokeria nata come ghost kitchen, con un avanzato sistema logistico di food delivery e integrazione custom con Cassa in Cloud. All'interno presente un configuratore di pokè."
   },
   {
     title: "Cubitto",
     src: "c2montreal.png",
     color: "#000000",
+    text:"white",
     href: "/projects/this-website",
     slug: "this-website",
-    technologies: "React Native, WebUI API"
+    technologies: "React Native, WebUI API",
+    description: "Una piattaforma web interattiva per la consultazione di un catalogo di auto a marchio Audi sincronizzato con un gestionale."
   },
   {
     title: "Motorlcass",
-    src: "silencio.png",
-    color: "#706D63",
-    href: "/projects/this-website",
+    src: "motorclass-screenshot.png",
+    color: "#000",
+    text:"white",
+    href: "https://motorclass.boiledbrains.it/",
     slug: "this-website",
-    technologies: "React.js, Webpack, API integrations"
+    technologies: "React.js, Webpack, API integrations",
+    description: "Una piattaforma web interattiva per la consultazione di un catalogo di auto a marchio Audi sincronizzato con un gestionale."
   }
 ]
 
@@ -124,8 +134,9 @@ export default function Home() {
             {
                 projects.map( (project, index) => {
                 const { src, color } = project
-                return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}  >
-                  
+                return <div className={styles.modal} style={{backgroundColor: color, flexDirection: 'column'}} key={`modal_${index}`}  >
+                  <div style={{color: project.text}}>{project.title}</div>
+                  <p style={{color: project.text, fontSize: "10px"}}>{project.technologies}</p>
                     <Image 
                     src={`/images/${src}`}
                     width={300}
@@ -133,7 +144,7 @@ export default function Home() {
                     alt="image"
                    
                     />
-                    
+                    <p style={{color: project.text, fontSize: "12px", padding:20, textAlign: "center"}}>{project.description}</p>
                 </div>
                 })
             }
@@ -141,7 +152,7 @@ export default function Home() {
         </motion.div>
         
         <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.a ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} href={projects[index].href} >View</motion.a>
+        <motion.a ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} target="_blank" href={projects[index].href} >View</motion.a>
         
     </>
   </main>
